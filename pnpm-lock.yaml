@@ -59,6 +59,9 @@ importers:
       canyon-data:
         specifier: workspace:^
         version: link:../canyon-data
+      canyon-map:
+        specifier: workspace:^
+        version: link:../canyon-map
       class-transformer:
         specifier: ^0.5.1
         version: 0.5.1
@@ -179,6 +182,25 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4
 
+  packages/canyon-map:
+    dependencies:
+      istanbul-lib-coverage:
+        specifier: ^3.2.2
+        version: 3.2.2
+      istanbul-lib-source-maps:
+        specifier: ^5.0.6
+        version: 5.0.6
+    devDependencies:
+      '@rslib/core':
+        specifier: ^0.0.18
+        version: 0.0.18(typescript@5.7.2)
+      '@types/istanbul-lib-coverage':
+        specifier: ^2.0.6
+        version: 2.0.6
+      '@types/istanbul-lib-source-maps':
+        specifier: ^4.0.4
+        version: 4.0.4
+
   packages/canyon-platform:
     dependencies:
       '@ant-design/icons':
@@ -202,6 +224,9 @@ importers:
       canyon-data:
         specifier: workspace:^
         version: link:../canyon-data
+      canyon-map:
+        specifier: workspace:^
+        version: link:../canyon-map
       canyon-report:
         specifier: 0.0.8-beta-49
         version: 0.0.8-beta-49
@@ -321,8 +346,8 @@ importers:
         specifier: ^0.1.1-beta.3
         version: 0.1.1-beta.3
       canyon-data:
-        specifier: 0.1.1-alpha.11
-        version: 0.1.1-alpha.11
+        specifier: workspace:^
+        version: link:../canyon-data
       commander:
         specifier: ^12.1.0
         version: 12.1.0
